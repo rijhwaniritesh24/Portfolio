@@ -1,0 +1,424 @@
+
+body{
+    margin: 0%;
+    padding: 0%;
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+   
+    font-size: large;
+    padding-top: 10px;
+    background-color:transparent;
+   z-index: 99;
+   transition:all 0.5 linear;
+}
+.nav_sticky{
+    background-color:navy;
+}
+nav .logo{
+    
+    /* border: 1px solid ; */
+  flex: 8;
+  text-align: center;
+  font-size:1.5em;
+  font-weight: bolder;
+  font-family: 'Abril Fatface' cursive; 
+  color: white;
+ 
+    
+}
+
+nav .links{
+    /* border: 1px solid ; */
+  flex: 8;
+    list-style: none;
+    text-align:center;
+    font-size:1.2em;
+  font-weight: bolder;
+
+  
+
+}
+.links>li:hover{
+    transform: scale(1.2);
+}
+/* li>a:active{
+   border: 1px solid;
+} */
+
+ul{
+    display: inline-flex;
+    align-items: center;
+    
+   
+    
+}
+
+li>a{
+    
+  
+    text-decoration: none;
+    /* border: 1px solid; */
+   margin-right: 50px;
+    color: white;
+    /* transform: all 0.3 ease; */
+    
+}
+
+.home{
+
+    background : rgba(0,0,0,.7) url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1120&q=80) no-repeat;
+  
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center; 
+    
+    
+}
+
+.home .text{
+    margin: auto 0 auto 200px;
+    color: white;
+}
+.home #text1{
+    font-size:2.5em;
+}
+.home #text2{
+    font-size:3em;
+}
+.home #text3{
+    font-size:2.5em;
+}
+.about div h1{
+    text-align: center;
+    font-size: 2em;
+    padding-top: 10px;
+}
+.about div .line{
+   text-align: center;
+    width: 300px;
+    height: 50px;
+   
+    border-top: 3px solid;
+    color: black;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    /* font-family: ubuntu,sans-serif */
+    font-family: ubuntu,sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background:#111;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+   
+    content: "who i am";
+    font-weight: bold;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: navy;
+    padding: 0.5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+   .about  .about_cont{
+    
+    display: flex;
+    
+   
+   height: 600px;
+    width: auto;
+    /* border: 1px solid; */
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about_cont .col_left img{
+
+    height: 400px;
+    width: 400px;
+   /* border: 5px solid; */
+   padding-top:0px;
+    object-fit: cover;
+    margin: 80px;
+    border-radius: 20px;
+    box-shadow: -20px 20px 30px grey;
+       
+   
+}
+
+
+.about_cont .col_right {
+    text-align: center;
+    height: 500px;
+    width: 600px;
+   overflow: auto;
+  
+}
+.about_cont .col_right p{
+    font-size: large;
+    text-align: justify;
+}
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: ubuntu,sans-serif;
+}
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after {
+    content: "what i know";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: navy;
+    padding: 0 5px;
+    background:  rgb(241, 239, 239);
+    transform: translateX(-50%);
+}
+.skills{
+    background-color: rgba(236, 236, 236, 0.425);
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.skills .skills-content{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+   
+}
+.skills .skills-content .column {
+    height: 300px;
+    
+    width: calc(50% - 30px);
+   
+}
+.skills .skills-content .left .text {
+   
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left{
+    overflow:auto;
+}
+.skills .skills-content .left p {
+    
+    text-align: justify;
+    
+}
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span {
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line {
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: navy;
+}
+.skills-content .right .css::before {
+    width: 60%;
+}
+.skills-content .right .html::before {
+    width: 90%;
+}
+.max-width {
+    max-width: 1300px;
+    padding: 50px 80px;
+    margin: 50px;
+}
+.skills-content .right .js::before {
+    width: 80%;
+}
+.skills-content .right .php::before {
+    width: 50%;
+}
+.skills-content .right .mysql::before {
+    width: 70%;
+}
+.contact .title::after {
+    content: "get in touch";
+}
+.contact .contact-content {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left .icons {
+    margin: 10px 0;
+}
+.contact .contact-content .row {
+    display: flex;
+    height: 65 px;
+    align-items: center;
+    margin: 20px;
+    font-size: large; 
+    
+}
+.contact .contact-content .row i{
+    color: navy;
+}
+.contact .contact-content .row .info {
+    font-size: larger;
+    margin-left: 30px;
+}
+.contact .contact-content .row .info .head{
+    
+    font-weight: bolder;
+}
+.contact .contact-content .column {
+    height: 400px;
+    
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text {
+   
+    font-size: 30px;
+    font-weight:bolder;
+    margin-bottom: 10px;
+}
+.contact .right form .fields {
+    
+    display: flex;
+}
+.contact .right form .field, .contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .name {
+    margin-right:0px;
+}
+.contact .right form .field input, .contact .right form .textarea textarea {
+    height: 100%;
+    width: 90%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0px 0px;
+    font-size: 17px;
+    font-family: poppins,sans-serif;
+    transition: all .3s ease;
+}
+.contact .right form .field, .contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea {
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .button-area {
+    display: flex;
+    align-items: center;
+   
+}
+.contact .right form .button-area button{
+    
+        color: #fff;
+        display: block;
+        width: 160px !important;
+        height: 45px;
+        outline: none;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 6px;
+        cursor: pointer;
+        flex-wrap: nowrap;
+        background: navy;
+        border: 2px solid navy;
+        transition: all .3s ease;
+    
+}
+footer{
+    font-size: medium;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    
+    text-align: center;
+    background-color: navy;
+}
+footer span a{
+    text-decoration: none;
+    color: white;
+}
