@@ -15,7 +15,25 @@ function triger(){
 
 document.body.onscroll= triger;
 
-console.log(document.documentElement.scrollTop);
+let toggle=document.querySelector(".hamburger")
+console.log(toggle);
+let bool=true;
+function func(){
+    console.log("here");
+
+    let link= document.querySelector(".links");
+    if(bool){
+        link.style.left="0%";
+    }
+    else{
+        link.style.left="-200%";
+    }
+    bool=!bool;
+    
+   
+}
+toggle.addEventListener("click",func);
+
 
 
 
